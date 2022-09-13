@@ -22,6 +22,7 @@ const pulse = keyframes`
     transform: scale(.9);
   }
 `
+
 export const TopContainer = styled.div`
   display: flex;
   margin-bottom: 2rem;
@@ -30,7 +31,6 @@ export const TopContainer = styled.div`
     flex-direction: column-reverse;
   }
 `
-
 export const HeroContent = styled.div`
   width: 50%;
   min-height: 80vh;

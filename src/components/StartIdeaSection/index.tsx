@@ -49,11 +49,14 @@ export const StartIdeaSection: React.FC<StartIdeaSectionProps> = ({ id }) => {
   return (
     <Section id={id}>
       <TopContainer>
-        <StartIdeaSectionTitle>Ideia Inicial</StartIdeaSectionTitle>
+        <StartIdeaSectionTitle>Definição do projeto</StartIdeaSectionTitle>
         <StartIdeaDescription>
-          A ideia do projeto surgiu da dificuldade em comum da equipe de
-          encontrar lojas com mais descrições dos produtos que sejam próximas a
-          eles ou mesmo digitais quando se tratava de calçados.
+          A ideia do projeto surgiu da dificuldade em comum da equipe em
+          encontrar lojas de sapatos que informassem descrições mais detalhadas
+          dos produtos sem a necessidade de ir até a loja presencialmente.
+          Assim, durante as discussões de como poderia ser solucionada essa
+          barreira, houveram três principais ideias que contribuíram para a
+          escolha do tema final:
         </StartIdeaDescription>
 
         <StartIdeaContent>

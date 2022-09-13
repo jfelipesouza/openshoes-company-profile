@@ -34,10 +34,10 @@ export const StartIdeaDescription = styled.p`
 export const StartIdeaContent = styled.div`
   display: grid;
   width: 80%;
-  min-height: 50vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem 2rem;
   justify-content: center;
+  justify-items: center;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -45,7 +45,6 @@ export const StartIdeaContent = styled.div`
   @media screen and (max-width: 800px) {
     width: 100%;
     grid-gap: 2rem 1rem;
-    justify-items: center;
   }
   @media screen and (max-width: 666px) {
     grid-template-columns: 1fr;

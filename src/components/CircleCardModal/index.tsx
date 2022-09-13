@@ -3,6 +3,7 @@ import {
   Container,
   DescriptionList,
   DescriptionListItem,
+  ModalContainer,
   Title
 } from './styled'
 
@@ -16,13 +17,15 @@ type CircleCardModalProps = {
 export const CircleCardModal: React.FC = () => {
   const [openModal, setOpenModal] = useState(false)
   return (
-    <Container>
-      <Title>Desing (UX/UI)</Title>
-      <DescriptionList>
-        <DescriptionListItem> Criação de Modelos</DescriptionListItem>
-        <DescriptionListItem> Criação de Ilustrações</DescriptionListItem>
-        <DescriptionListItem> Criação de Mockups</DescriptionListItem>
-      </DescriptionList>
-    </Container>
+    <>
+      <Container>
+        <Title>Desing (UX/UI)</Title>
+        <DescriptionList>
+          <DescriptionListItem> Criação de Modelos</DescriptionListItem>
+          <DescriptionListItem> Criação de Ilustrações</DescriptionListItem>
+          <DescriptionListItem> Criação de Mockups</DescriptionListItem>
+        </DescriptionList>
+      </Container>
+    </>
   )
 }

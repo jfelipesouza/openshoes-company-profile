@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CardContainer = styled.div`
   box-shadow: 3px 4px 10px #22222289;
   border-radius: 0.5rem;
-  width: 300px;
+  min-width: 300px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,9 @@ export const CardContainer = styled.div`
   transition: all 0.4s linear;
   &:hover {
     transform: translateY(-0.5rem);
+  }
+  @media screen and (max-width: 666px) {
+    width: 300px;
   }
   @media screen and (max-width: 526px) {
     height: 200px;

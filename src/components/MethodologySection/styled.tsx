@@ -61,6 +61,7 @@ export const MethodologySubTitle = styled.h4`
   width: 100%;
   text-align: left;
   @media screen and (max-width: 526px) {
+    text-align: center;
     font-size: ${({ theme }) => theme.mobileSizes.subtitle};
   }
 `
@@ -71,4 +72,10 @@ export const MethodologyWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin: 3rem 0;
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem 0;
+    margin: 0;
+  }
 `

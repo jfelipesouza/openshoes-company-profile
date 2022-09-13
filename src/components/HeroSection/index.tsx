@@ -25,12 +25,15 @@ export const HeroSection: React.FC<SectionProps> = ({ ...props }) => {
           </HeroContentTitle>
           <HeroSubtitle>Sobre nós</HeroSubtitle>
           <HeroContentDescription>
-            OpenShoes é uma vitrine digital de sapatos. O projeto foi iniciado
-            2022 e possui uma grande variedade de produtos, desde moda até
-            esportes. O site oferece uma interface muito amigável com muitos
-            filtros para ajudar o cliente a encontrar o produto desejado. A loja
-            tem muitos produtos, que são divididos em diferentes categorias,
-            como tênis, sandálias e assim por diante.
+            A Openshoes se trata de uma vitrine digital de calçados que tem por
+            objetivo solucionar problemas como a necessidade de deslocamento até
+            lojas de sapatos físicas e a dificuldade na busca pelo sapato ideal
+            em lojas virtuais. Pensando nisso, nós desenvolvemos uma plataforma
+            virtual que oferece o acesso a inúmeras lojas físicas e virtuais, e
+            permite que o cliente explore livremente e com praticidade todas as
+            informações necessárias que procura para o seu sapato. Com a
+            Openshoes, você e o sapato que você deseja estão há uma tela de
+            distância.
           </HeroContentDescription>
           <HeroButton href="#start">Veja mais</HeroButton>
         </HeroContent>

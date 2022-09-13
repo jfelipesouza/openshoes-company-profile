@@ -46,3 +46,16 @@ export const DescriptionListItem = styled.li`
     top: 0.25rem;
   }
 `
+
+type ModalProps = {
+  open: boolean
+}
+
+export const ModalContainer = styled.div<ModalProps>`
+  opacity: ${({ open }) => (open ? 1 : 0)};
+  width: 100vw;
+  height: 100vh;
+  z-index: ${({ open }) => (open ? 999 : 0)};
+  background-color: #00000085;
+  transition: all 0.2s linear;
+`
