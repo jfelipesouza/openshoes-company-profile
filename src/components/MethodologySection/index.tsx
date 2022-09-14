@@ -3,6 +3,7 @@ import { SectionProps } from '../../@types/section'
 import { Scrum } from '../../assets'
 import { CircleCardModal } from '../CircleCardModal'
 import { Section } from '../Section'
+import { cards } from './cards'
 import {
   MethodologyDescription,
   MethodologyDivision,
@@ -20,13 +21,15 @@ export const MethodologySection: React.FC<SectionProps> = ({ id }) => {
       <MethodologyGroup>
         <MethodologyDivision>
           <MethodologyDescription>
-            Foi adotado pelo grupo a metodologia agil do Scrum para o
-            densenvolvimento da plataforma. Cada membro desempenhou uma ou mais
-            funções durante o desenvolvimento. Tendo em vista os três papéis da
-            metologia Scrum, sendo eles o Product Owner (PO), Scrum Master e
-            equipe de desenvolvimento, foram divididas funções entre os membros
-            do grupo onde a Karilana foi a PO, o João Felipe foi o Scrum Master
-            e todos os membros atuaram como equipe de desenvolvimento.
+            Uma das metodologias adotadas durante todo o processo de
+            desenvolvimento do projeto foi a metodologia ágil do Scrum, onde
+            cada membro foi alocado em sua função juntamente com suas
+            respectivas atividades a serem realizadas, sendo organizadas
+            reuniões periódicas para manter o grupo informado do progresso do
+            projeto, assim como possíveis dificuldades que seriam encontradas.
+            Dentro dessa metodologia, três papéis fundamentais foram designados:
+            Karilana Santos como Product Owner (PO), João Felipe como Scrum
+            Master (SM) e restante do time como Developers (DEVs).
           </MethodologyDescription>
         </MethodologyDivision>
 
@@ -38,9 +41,9 @@ export const MethodologySection: React.FC<SectionProps> = ({ id }) => {
         <MethodologyDivision duration={1000}>
           <MethodologySubTitle>Setores do desenvolvimento</MethodologySubTitle>
           <MethodologyWrapper>
-            <CircleCardModal />
-            <CircleCardModal />
-            <CircleCardModal />
+            {cards.map((card, index) => (
+              <CircleCardModal data={card} key={index} />
+            ))}
           </MethodologyWrapper>
         </MethodologyDivision>
       </MethodologyGroup>

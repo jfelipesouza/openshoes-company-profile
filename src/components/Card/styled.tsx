@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
   box-shadow: 3px 4px 10px #22222289;
   border-radius: 0.5rem;
   min-width: 300px;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@ export const CardContainer = styled.div`
     width: 300px;
   }
   @media screen and (max-width: 526px) {
-    height: 200px;
+    height: 250px;
   }
   @media (max-width: 375px) {
     width: 280px;

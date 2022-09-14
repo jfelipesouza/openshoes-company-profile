@@ -10,6 +10,7 @@ export const Container = styled.div`
   justify-content: center;
   background-image: linear-gradient(
     to top left,
+
     ${({ theme }) => theme.colors.primary},
     ${({ theme }) => theme.colors.secundary},
     ${({ theme }) => theme.colors.secundaryHover}
@@ -34,6 +35,7 @@ export const DescriptionList = styled.ul`
 export const DescriptionListItem = styled.li`
   margin-top: 0.25rem;
   position: relative;
+  padding: 0 1.2rem;
   color: #fff;
   ::before {
     content: '';
@@ -42,20 +44,7 @@ export const DescriptionListItem = styled.li`
     height: 0.5rem;
     border-radius: 0.5rem;
     background-color: ${({ theme }) => theme.colors.primaryLight};
-    left: -1rem;
+    left: 0.2rem;
     top: 0.25rem;
   }
-`
-
-type ModalProps = {
-  open: boolean
-}
-
-export const ModalContainer = styled.div<ModalProps>`
-  opacity: ${({ open }) => (open ? 1 : 0)};
-  width: 100vw;
-  height: 100vh;
-  z-index: ${({ open }) => (open ? 999 : 0)};
-  background-color: #00000085;
-  transition: all 0.2s linear;
 `

@@ -26,21 +26,21 @@ export const StartIdeaSection: React.FC<StartIdeaSectionProps> = ({ id }) => {
     {
       title: '1° Ideia',
       description:
-        'Inicialmente iriamos criar somente um sistema de gerenciamento de estoque para detarminadas lojas de calçados.',
+        'Inicialmente, foi pensado na criação de um sistema de gerenciamento de estoque, que teria como diferencial a possibilidade do cliente verificar presencialmente se o sapato que procura na loja está disponível e em qual fileira ele se encontra.',
       direction: 'left',
       delay: 0
     },
     {
       title: '2° Ideia',
       description:
-        '  Após um brainstorm com toda equipe notou-se que a problematica não seria resolvida somente com un sistema de estoque e mudou para uma loja digital.',
+        'A ideia inicial passou a incorporar além das lojas físicas, as lojas virtuais, e nesse momento o objetivo do projeto se destinava em apresentar ao cliente, de maneira virtual, quais lojas teriam o estoque do sapato escolhido e qual a maneira de comprar com ela.',
       direction: 'left',
       delay: 500
     },
     {
       title: '3° Ideia',
       description:
-        'Com base nas complexidades burocraticas para geração de notas fisicais optamos por desenvolver uma vitrine digital e não uma  loja completa.',
+        'Como escopo final, definimos que o projeto deixaria seu foco no estoque e passaria a alocar as lojas na plataforma, atuando no redirecionamento para o endereço virtual ou físico, e permitindo que o cliente possa acessar diversos tipos de sapatos de uma vez.',
       direction: 'left',
       delay: 1000
     }
@@ -71,9 +71,10 @@ export const StartIdeaSection: React.FC<StartIdeaSectionProps> = ({ id }) => {
           ))}
         </StartIdeaContent>
         <StartIdeaDescription>
-          Utilizamos o Figma para a criação de modelos para começarmos a
-          desenvolver a aplicação e gerar rascunhos de telas, fluxos e
-          interações.
+          Assim, na intenção de ter uma maior visualização de como o projeto se
+          estabeleceria, utilizamos o Figma para a criação dos modelos das
+          telas, na detalhação de fluxos e na definição de futuras
+          funcionalidades.
         </StartIdeaDescription>
         <Figma src={iframe} allowFullScreen />
       </TopContainer>

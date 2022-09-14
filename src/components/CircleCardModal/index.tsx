@@ -1,29 +1,27 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   Container,
   DescriptionList,
   DescriptionListItem,
-  ModalContainer,
   Title
 } from './styled'
 
 type CircleCardModalProps = {
   data: {
     title: string
-    listDescription: { item: string }[]
+    listDescription: string[]
   }
 }
 
-export const CircleCardModal: React.FC = () => {
-  const [openModal, setOpenModal] = useState(false)
+export const CircleCardModal: React.FC<CircleCardModalProps> = ({ data }) => {
   return (
     <>
       <Container>
-        <Title>Desing (UX/UI)</Title>
+        <Title>{data.title}</Title>
         <DescriptionList>
-          <DescriptionListItem> Criação de Modelos</DescriptionListItem>
-          <DescriptionListItem> Criação de Ilustrações</DescriptionListItem>
-          <DescriptionListItem> Criação de Mockups</DescriptionListItem>
+          {data.listDescription.map((item, index) => (
+            <DescriptionListItem key={index}>{item}</DescriptionListItem>
+          ))}
         </DescriptionList>
       </Container>
     </>

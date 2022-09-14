@@ -46,7 +46,7 @@ export const HeroContent = styled.div`
   &:nth-child(2) {
     &::after {
       content: '';
-      width: 90%;
+      width: 85%;
       background-color: ${({ theme }) => theme.colors.secundaryHover};
       height: 100%;
       position: absolute;

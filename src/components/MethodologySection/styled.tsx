@@ -73,9 +73,13 @@ export const MethodologyWrapper = styled.div`
   justify-items: center;
   margin: 3rem 0;
 
-  @media screen and (max-width: 700px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 890px) {
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem 0;
     margin: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
   }
 `

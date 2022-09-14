@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter",sans-serif;
+    transition: all 0.4s linear;
   }
   :root{
     font-size: 16px;
@@ -17,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${({ theme }) => theme.fontWeight.medium};
     background-color:  ${({ theme }) => theme.colors.background};
     overflow-x: hidden;
-    transition: background-color 0.4s linear;
+    
   }
   body::-webkit-scrollbar {
     width: 10px;
